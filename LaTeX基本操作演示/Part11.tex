@@ -1,0 +1,57 @@
+\documentclass{ctexart}%ctexbook, ctexrep
+%\usepackage{ctex}
+\usepackage{amsmath}
+% 正文区（文稿区）
+\begin{document}
+	%矩阵环境，用&分隔列，用\\分隔行
+	\[
+	\begin{matrix}
+	0 & 1\\
+	1 & 0
+	\end{matrix} \qquad
+	% pmatrix环境 加小括号
+	\begin{pmatrix}
+	0 & -i\\
+	i & 0
+	\end{pmatrix} \qquad
+	% bmatrix环境 加中括号
+	\begin{bmatrix}
+	0 & -i\\
+	i & 0
+	\end{bmatrix} \qquad
+	% Bmatrix环境 加大括号
+	\begin{Bmatrix}
+	0 & -i\\
+	i & 0
+	\end{Bmatrix} \qquad
+	% vmatrix环境 加单竖线
+	\begin{vmatrix}
+	0 & -i\\
+	i & 0
+	\end{vmatrix} \qquad
+	% Vmatrix环境 加双竖线
+	\begin{Vmatrix}
+	0 & -i\\
+	i & 0
+	\end{Vmatrix} 
+	\]
+	
+	% 可以使用上下标
+	\[
+	A = \begin{pmatrix}
+	a_{11}^2 & a_{12}^2 & a_{13}^2 \\
+	0 & a_{22} & a_{23} \\
+	0 & 0 & a_{33}
+	\end{pmatrix}
+	\]
+	
+	%常用省略号：\dots,\vdots,\ddots
+	\[
+	A = \begin{pmatrix}
+	a_{11} & \dots & a_{1n} \\
+	& \ddots & \vdots \\
+	0 & & a_{mn}
+	\end{pmatrix}_{n \times n}% times命令排版乘号
+	\]
+	
+\end{document}

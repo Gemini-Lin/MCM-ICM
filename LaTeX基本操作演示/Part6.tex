@@ -1,0 +1,29 @@
+ %导言区
+  \documentclass{article}
+  \usepackage{ctex} % 中文处理宏包
+  \usepackage{xltxtra} %提供了针对XeTeX的改进并且加入XeTeX的LOGO
+  % 正文区（文稿区）
+  \begin{document}
+  	\section{空白符号}
+  	% 空行分段，多个空行等同1个
+  	% 自动缩进，绝对不能使用空格代替
+  	% 英文中多个空格处理为1个空格，中文中空格将被忽略
+	% 汉字与其它字符的间距会自动由XeLaTeX处理
+	% 禁止使用中文全角空格
+  	\section{\LaTeX 控制符}
+  	\# \$ \% \{ \} \~{} \_{} \^{} \textbackslash \&
+  	\section{排版符号}
+  	\S \P \dag \ddag \copyright \pounds
+  	\section{\TeX 标志符号}
+  	%基本符号
+  	\TeX{} \LaTeX{} \LaTeXe{}
+  	\XeLaTeX
+  	\section{引号}
+  	‘ ’ “ ”
+  	\section{连字符}
+  	- -- ---
+  	\section{非英文字符}
+  	\oe \OE
+  	\section{重音符号(以o为例)}
+  	\`o
+  \end{document}	

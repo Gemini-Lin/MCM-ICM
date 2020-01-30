@@ -1,0 +1,16 @@
+% 导言区
+\documentclass{ctexart}%ctexbook, ctexrep
+%\usepackage{ctex}
+% 导言区: \usepackage{graphicx}
+% 语  法: \includegraphics[<选项>]{<文件名>}
+% 格  式: EPS,PDF,PNG,JPEG,BMP
+\usepackage{graphicx}	
+\graphicspath{{figures/}}% 此处需要双括号
+% 正文区（文稿区）
+\begin{document}
+	\LaTeX{}中的插图:
+	\includegraphics[scale=0.25]{wallpaper}% 输入图片名,指定缩放因子
+	%\includegraphics[height=5cm]{wallpaper}
+	%\includegraphics[width=10cm]{wallpaper}
+	%使用texdoc graphicx 查看文档
+\end{document}
